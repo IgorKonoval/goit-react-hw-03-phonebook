@@ -5,6 +5,7 @@ import ContactForm from './Form/Form';
 import { Container, Section, Title, SectionTitle, Message } from './App.styled';
 import { ContactList } from './ContactList/ContactList';
 import Filter from './Filter/Filter';
+import { GlogalStyle } from './GlobalStyle';
 
 export class App extends Component {
   state = {
@@ -87,6 +88,7 @@ export class App extends Component {
               contact!
             </Message>
           )}
+          <GlogalStyle />
           <Toaster />
         </Section>
       </Container>

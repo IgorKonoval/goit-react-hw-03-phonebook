@@ -1,5 +1,7 @@
-@import-normalize; /* bring in normalize.css styles */
+import { createGlobalStyle } from 'styled-components';
+import 'modern-normalize';
 
+export const GlogalStyle = createGlobalStyle`
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -34,3 +36,4 @@ button:focus {
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
+`;
