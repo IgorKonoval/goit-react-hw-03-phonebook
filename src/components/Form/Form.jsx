@@ -1,15 +1,18 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { Form, Field, FormGroup, ErrorMessage } from './Form.styled';
+
 const FormSchema = Yup.object().shape({
   name: Yup.string().required('Name is required'),
   number: Yup.string().required('Number is required'),
 });
+
 const ContactForm = ({ onSubmit }) => {
   function handleSubmit(values, { resetForm }) {
     onSubmit(values);
     resetForm();
   }
+
   return (
     <Formik
       initialValues={{

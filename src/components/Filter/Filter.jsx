@@ -1,4 +1,5 @@
 import { Label, Input } from './Filter.styled';
+
 const Filter = ({ value, onChange }) => {
   return (
     <Label>
@@ -12,4 +13,5 @@ const Filter = ({ value, onChange }) => {
     </Label>
   );
 };
+
 export default Filter;
